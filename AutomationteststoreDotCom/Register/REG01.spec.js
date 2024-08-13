@@ -1,12 +1,10 @@
-/*
-Run : npx playwright test REG01.spec.js --headed
+/* Copy and Paste to terminal to run test : 
+npx playwright test REG01.spec.js --headed
 */
 
 import { test } from '@playwright/test';
 
-
 test('Test if user can login with valid credentials', async ({ page }) => {
-
 
   await page.goto('https://automationteststore.com/index.php?rt=account/login');
   await page.getByRole('button', { name: ' Continue' }).click();
@@ -30,6 +28,6 @@ test('Test if user can login with valid credentials', async ({ page }) => {
   await page.getByLabel('I have read and agree to the').check();
   await page.getByRole('button', { name: ' Continue' }).click({timeout: 10000});
 
-
+  await page.waitForTimeout(5000);
 
 });

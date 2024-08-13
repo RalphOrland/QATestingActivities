@@ -1,0 +1,14 @@
+{
+  "name": "qatestingactivities",
+  "version": "1.0.0",
+  "description": "Test case link:\r https://docs.google.com/spreadsheets/d/1Qbzw1QFToCpFkBVSv8LwA7qSlQTzZ35uxApirg0FROo/edit?usp=sharing",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.46.0",
+    "@types/node": "^22.2.0"
+  }
+}
