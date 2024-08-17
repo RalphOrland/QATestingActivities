@@ -3,11 +3,10 @@ npx playwright test REG05.spec.js --headed
 */
 
 import { test, expect } from '@playwright/test';
-import { generateRandomUsername, generateRandomEmail } from './config.js';
+import { generateRandomEmail } from './config.js';
 
 test('Test if all data input from user is retained after submitting with missing info', async ({ page }) => {
 
-  const randomUsername = generateRandomUsername(12);
   const randomEmail = generateRandomEmail();
 
   await page.goto('https://automationteststore.com/index.php?rt=account/login');
