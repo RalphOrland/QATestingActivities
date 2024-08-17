@@ -5,7 +5,7 @@ npx playwright test REG01.spec.js --headed
 import { test } from '@playwright/test';
 import { generateRandomUsername, generateRandomEmail } from './config.js';
 
-test('Test if user can login with valid credentials', async ({ page }) => {
+test('Test if the user can register using valid credentials', async ({ page }) => {
 
   const randomUsername = generateRandomUsername(12);
   const randomEmail = generateRandomEmail();
